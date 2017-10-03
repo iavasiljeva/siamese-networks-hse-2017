@@ -1,5 +1,13 @@
 # siamese-networks-hse-2017
 
+This is the lab of HSE students on the theme of Siamese networks
+Group:
+* Kositsin Alexander
+* Vasiljeva Inna
+* Viko Maxim
+* Pavlova Elena
+---
+
 In this project we are using TensorFlow Docker image from docker-stacks: 
 https://github.com/jupyter/docker-stacks/tree/master/tensorflow-notebook
 
