@@ -1,6 +1,6 @@
 # siamese-networks-hse-2017
 
-This is the lab of HSE students on the theme of Siamese networks
+This is the lab of HSE students on the theme of Siamese networks  
 Group:
 * Kositsin Alexander
 * Vasiljeva Inna
