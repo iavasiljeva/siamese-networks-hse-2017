@@ -1,4 +1,4 @@
-# siamese-networks-hse-2017
+﻿# siamese-networks-hse-2017
 
 This is the lab of HSE students on the theme of Siamese networks  
 Group:
@@ -29,3 +29,11 @@ Validation dataset used:
 https://github.com/zalandoresearch/fashion-mnist
 
 it should be placed at data/fashion/ folder
+
+
+---
+# References:
+* https://sorenbouma.github.io/blog/oneshot/
+* https://hackernoon.com/one-shot-learning-with-siamese-networks-in-pytorch-8ddaab10340e
+* https://arxiv.org/pdf/1607.08438.pdf
+---
