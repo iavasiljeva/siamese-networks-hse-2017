@@ -8,10 +8,11 @@ Group:
 * Pavlova Elena
 ---
 
-In this project we are using TensorFlow Docker image from docker-stacks: 
-https://github.com/jupyter/docker-stacks/tree/master/tensorflow-notebook
+In this project we are using lspvic/tensorboard-notebook Docker image:  
+https://pypi.python.org/pypi/jupyter-tensorboard/0.1.3
 
 This docker image contains:
+* Tensorboard
 * Tensorflow and Keras for Python 3
 * Jupyter Notebook 5.0.x
 * Conda Python 3.x environment
