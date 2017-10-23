@@ -30,8 +30,9 @@ Validation dataset used:
 https://github.com/zalandoresearch/fashion-mnist
 
 it should be placed at data/fashion/ folder
----
 
+---
+# Siamese neural network
 Siamese neural network is a class of neural network architectures that contain two identical sub-networks joined at their outputs. Identical here means that they have the same configuration with the same parameters and weights. Parameter updating occurs simultaneously in both networks.
 The objective of the siamese neural network is not to classify input images, but to differentiate between a collection of same/different pairs or to evaluate new categories based on learned feature mappings for verification.
 
