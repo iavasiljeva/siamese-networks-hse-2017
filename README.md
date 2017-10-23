@@ -44,6 +44,10 @@ Siamese neural networks are popular among tasks related to finding similarities 
 * image comparison
 
 ---
+# Our results
+We use two models of Siamese neural networks that are trained and tested on a dataset Fashion-MNIST. The first model consists of three layers of a multilayer perceptron and has an accuracy of about 90%.The second model consists of four layers and has an accuracy of about 80%.Perhaps the low accuracy of the second model is due to the fact that the model was not trained enough.Similarity between the two images is calculated using the Euclidean distance.
+
+---
 # References:
 * https://sorenbouma.github.io/blog/oneshot/
 * https://hackernoon.com/one-shot-learning-with-siamese-networks-in-pytorch-8ddaab10340e
