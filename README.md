@@ -24,12 +24,19 @@ This docker image contains:
 * run command in Quick Docker Terminal `docker run -it —rm -p 8888:8888 lspvic/tensorboard-notebook`
 * find configured IP address (by default 192.168.99.100).
 * open a browser and make a call to http://192.168.99.100:8888 and enter a token from cmd.
+
+If you use Windows, be sure it is Windows Enterprise, Professional or Education. 
 ---
 
 Validation dataset used: 
 https://github.com/zalandoresearch/fashion-mnist
 
 it should be placed at data/fashion/ folder
+
+---
+# Goal
+
+The aim of our work is to investigate the architecture of Siamese neural networks and the features of their application.
 
 ---
 # Siamese neural network
@@ -44,16 +51,29 @@ Siamese neural networks are popular among tasks related to finding similarities 
 * image comparison
 
 ---
-# Our results
-The aim of our work is to investigate the architecture of Siamese neural networks and the features of their application.
+# Related works
+
+Siamese NNs are popular among tasks that involve finding similarity or a relationship between two comparable things. Some examples are paraphrase scoring, where the inputs are two sentences and the output is a score of how similar they are; or signature verification, where figure out whether two signatures are from the same person ([Jane Bromley et al., 1994](https://papers.nips.cc/paper/769-signature-verification-using-a-siamese-time-delay-neural-network.pdf)). In that work during training the two sub-networks extract features from two signatures, while the joining neuron measures the distance between the two feature vectors. Verification consists of comparing an extracted feature vector with a stored feature vector for the signer. Signatures closer to this stored representation than a chosen threshold are accepted, all other signatures are rejected as forgeries. Similar work is focused on character recognition ([Koch et al., 2016](http://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf)), where the authors present a novel approach which limits assumptions on the structure of the inputs while automatically acquiring features which enable the model to generalize successfully from few examples.
+
+Some researches tend to use Siamese networks for facial recognition as described [in the article](https://hackernoon.com/one-shot-learning-with-siamese-networks-in-pytorch-8ddaab10340e), where the network consists of two identical neural networks, each taking one of the two input images. The last layers of the two networks are then fed to a contrastive loss function, which calculates the similarity between the two images. Another example relates to the privacy implications of disseminating photos of people through social media ([Oh et al., 2016](https://arxiv.org/pdf/1607.08438.pdf)). The authors build a Siamese neural network to compute the match probability between a pair of persons based on head and body cues. A pair of instances are given as input, whose head and body features are then computed using the single person recognizer. These features are passed through three fully connected layers with ReLU activations with a binary prediction at the end (match, no-match).
+
+---
+# Approach
 
 We create two models of the Siamese neural network for our research. The first model consists of three layers of a multilayer perceptron and the second model consists of four layers. Similarity between the two images is calculated using the Euclidean distance.
+
 Our models are trained and tested on a dataset Fashion-MNIST (https://github.com/zalandoresearch/fashion-mnist). This dataset  consists of a training set of 60 000 examples and a test set of 10 000 examples. Each example is a 28x28 grayscale image, associated with a label from 10 classes.
+
+---
+# Our results
 
 We obtained the following results. The first model has an accuracy of 90.48% on a train and test dataset. The second model has an accuracy of 80.09% on a train dataset and 80% test dataset.
 The first model has a quite good accuracy. The second model has an accuracy lower by 10%. Perhaps the low accuracy of the second model is due to the fact that the model was not trained enough. Therefore, it is necessary to train more the second model in the future.
 
-You can try to complicate these models or use another activation function or similarity metric to obtain higher accuracy. In addition, there is a desire to use CNN in the context of Siamese neural networks for tasks with higher dimensionality.
+---
+# Future research
+
+It is strongly recommended to try complicating these models or using another activation function or similarity metric to obtain higher accuracy. In addition, there is a desire to use CNN in the context of Siamese neural networks for tasks with higher dimensionality.
 
 ---
 # References:
