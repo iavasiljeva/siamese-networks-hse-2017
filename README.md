@@ -26,6 +26,7 @@ This docker image contains:
 * open a browser and make a call to http://192.168.99.100:8888 and enter a token from cmd.
 
 If you use Windows, be sure it is Windows Enterprise, Professional or Education. 
+
 ---
 
 Validation dataset used: 
