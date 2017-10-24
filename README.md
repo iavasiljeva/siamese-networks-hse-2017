@@ -51,7 +51,7 @@ We create two models of the Siamese neural network for our research. The first m
 Our models are trained and tested on a dataset Fashion-MNIST (https://github.com/zalandoresearch/fashion-mnist). This dataset  consists of a training set of 60 000 examples and a test set of 10 000 examples. Each example is a 28x28 grayscale image, associated with a label from 10 classes.
 
 We obtained the following results. The first model has an accuracy of 90.48% on a train and test dataset. The second model has an accuracy of 80.09% on a train dataset and 80% test dataset.
-The first model has a quite good accuracy. The second model has an accuracy lower by 10%. Perhaps the low accuracy of the second model is due to the fact that the model was not trained enough. Therefore, it is necessary to learn more the second model in the future.
+The first model has a quite good accuracy. The second model has an accuracy lower by 10%. Perhaps the low accuracy of the second model is due to the fact that the model was not trained enough. Therefore, it is necessary to train more the second model in the future.
 
 You can try to complicate these models or use another activation function or similarity metric to obtain higher accuracy. In addition, there is a desire to use CNN in the context of Siamese neural networks for tasks with higher dimensionality.
 
