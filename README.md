@@ -54,6 +54,7 @@ We obtained the following results. The first model has an accuracy of 90.48% on 
 The first model has a quite good accuracy. The second model has an accuracy lower by 10%. Perhaps the low accuracy of the second model is due to the fact that the model was not trained enough. Therefore, it is necessary to learn more the second model in the future.
 
 You can try to complicate these models or use another activation function or similarity metric to obtain higher accuracy. In addition, there is a desire to use CNN in the context of Siamese neural networks for tasks with higher dimensionality.
+
 ---
 # References:
 * https://sorenbouma.github.io/blog/oneshot/
